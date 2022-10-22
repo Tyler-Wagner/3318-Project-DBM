@@ -1,9 +1,20 @@
+package Windows;/*
+    Use: Creates the inital Login Window made for the project
+
+    Author: Tyler Wagner
+    Date Created: 10/17/18
+
+    TODO:
+    Create a way for people to create a new account or login to an existing one.
+    If I want to get fancy create a way for people to rest passwords
+ */
+
 import javax.swing.*; //imports Swing package which creates form and button
 
 import java.awt.BorderLayout;
 import java.awt.event.*; //imports Event package which listens for button press
 
-public class guiTest implements ActionListener { //notice implements ActionListener
+public class LoginWindow implements ActionListener { //notice implements ActionListener
     public JFrame frame = new JFrame();
     JButton Login;
     JLabel Username;
@@ -15,7 +26,7 @@ public class guiTest implements ActionListener { //notice implements ActionListe
 
 
     public static void main (String[] args) {
-        guiTest gui = new guiTest();
+        LoginWindow gui = new LoginWindow();
         gui.press();
 
     }

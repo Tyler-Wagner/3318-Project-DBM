@@ -1,13 +1,21 @@
-import java.awt.BorderLayout;
+package Windows;/*
+    Use: Creating the secondary window that will be used to search through the DB
 
-import javax.imageio.plugins.tiff.TIFFDirectory;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
+    Date Created: 10/18/22
+    Author: Tyler Wagner
+
+    TODO:
+     Add a menu bar to log out of an account
+     Fix the text area so it shows ALL previous searches and not just the last one ( THIS IS DONE WITH AN ARRAY DIPSHIT)
+
+ */
+
+import java.awt.*;
+
+import javax.swing.*;
 import java.awt.event.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class searchWindow {
     //Declaring all Variables
@@ -18,6 +26,8 @@ public class searchWindow {
     JLabel Search;
     JTextField searchBar;
     JPanel panel2;
+
+    WindowLogic wl = new WindowLogic();
 
     public void searchWindow()
     {
@@ -49,9 +59,14 @@ public class searchWindow {
 
     public void actionPerformed(ActionEvent event)
     {
-        String searchedTitles = searchBar.getText();
+        String searchedItem = searchBar.getText();
+        previousSearches.setText(searchedItem);
+        String temp = searchedItem;
 
-        previousSearches.setText(searchedTitles);
+
+
+
+        wl.windowLogic();
 
         /*
         implement the use of the Database here. IE if statements searching the DB for the correct game or something.
