@@ -6,7 +6,7 @@ package Windows;/*
 
     TODO:
      Add a menu bar to log out of an account
-     Fix the text area so it shows ALL previous searches and not just the last one ( THIS IS DONE WITH AN ARRAY DIPSHIT)
+     Fix the text area so it shows ALL previous searches and not just the last one ( THIS IS DONE WITH AN ARRAY LIST DIP SHIT )
 
  */
 
