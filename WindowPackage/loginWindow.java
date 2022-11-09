@@ -1,9 +1,18 @@
+/*
+Author: Tyler Wagner
+Date Created: ?
+Date Modified: 11/8/22
+Modified by: Tyler Wagner
+ */
+
+package WindowPackage;
+
 import javax.swing.*; //imports Swing package which creates form and button
 
 import java.awt.BorderLayout;
 import java.awt.event.*; //imports Event package which listens for button press
 
-public class guiTest implements ActionListener { //notice implements ActionListener
+public class loginWindow implements ActionListener { //notice implements ActionListener
     public JFrame frame = new JFrame();
     JButton Login;
     JLabel Username;
@@ -15,7 +24,7 @@ public class guiTest implements ActionListener { //notice implements ActionListe
 
 
     public static void main (String[] args) {
-        guiTest gui = new guiTest();
+        loginWindow gui = new loginWindow();
         gui.press();
 
     }

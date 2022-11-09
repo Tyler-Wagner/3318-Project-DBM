@@ -1,3 +1,12 @@
+/*
+Author: Tyler Wagner
+Date Created: ?
+Date Modified: 11/8/22
+Modified by: Tyler Wagner
+ */
+
+package WindowPackage;
+
 import java.awt.BorderLayout;
 
 import javax.imageio.plugins.tiff.TIFFDirectory;
